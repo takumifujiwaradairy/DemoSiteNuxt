@@ -1,0 +1,17 @@
+.header{
+  display: flex;
+  background-color: skyblue;
+  width:90%;
+  margin:0 auto;
+
+  .header-list{
+    display: flex;  
+    background-color: green;
+    width: 90%;
+    margin:0 auto;
+    
+    .header-item{
+      padding-right: 30px;
+    }
+  }
+}

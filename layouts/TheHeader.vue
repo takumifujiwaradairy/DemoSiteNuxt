@@ -7,13 +7,13 @@
     </div>
     <ul class="header-list">
       <nuxt-link to="/post">
-        <li>投稿</li>
+        <li class="header-item">投稿</li>
       </nuxt-link>
       <nuxt-link to="/login">
-      <li>ログイン</li>
+      <li class="header-item">ログイン</li>
       </nuxt-link>
       <nuxt-link to="/signup">
-      <li>新規登録</li>
+      <li class="header-item">新規登録</li>
       </nuxt-link>
     </ul>
   </div>
