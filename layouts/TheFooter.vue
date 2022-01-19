@@ -1,6 +1,6 @@
 <template>
   <div class="container footer">
-    <p>@Copyright (c) FujiwaraTakumi</p>
-    <p>2022</p>
+    <p class="footer-item">@Copyright (c) FujiwaraTakumi</p>
+    <p class="footer-item">2022</p>
   </div>
 </template>
