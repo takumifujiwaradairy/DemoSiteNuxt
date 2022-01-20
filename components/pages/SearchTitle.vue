@@ -1,5 +1,5 @@
 <template>
- <div>
+  <div>
     <input type="text" @focus="setFlg">
     <button @click="find">find</button> 
   </div> 
@@ -8,11 +8,11 @@
 <script>
 export default {
   data: function(){
-    return{
-      find_flag: false 
+    return {
+      findFlag: false 
     } 
   },
-  computed:{
+  computed: {
     searchTitle: function(){
       // if(this.find_flag){
         // let obj = [];
@@ -21,7 +21,7 @@ export default {
       // }
     }
   },
-  methods:{
+  methods:  {
     find: function(){
       this.find_flag = true;
     },

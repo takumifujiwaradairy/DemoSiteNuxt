@@ -15,8 +15,7 @@
 export default {
   methods:{
     insert: function(){
-      let obj =  {title: this.title, content: this.content}
-      this.$store.commit('insert',obj)
+      this.$store.commit('insert',{ title: this.title, content: this.content })
       this.title = '';
       this.content = '';
     }
