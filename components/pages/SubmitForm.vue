@@ -1,7 +1,9 @@
 <template>
-  <div class="submitform">
-    <input type="text" name="title">
-    <textarea name="content"></textarea>
+  <div class="submitform container">
+    <label class="form-label">タイトル</label>
+    <input type="text" name="title" class="form-control">
+    <label class="form-label">記事</label>
+    <textarea name="content" class="form-control" rows="3"></textarea>
     <div>
       <button>save</button> 
       <button>find</button> 
