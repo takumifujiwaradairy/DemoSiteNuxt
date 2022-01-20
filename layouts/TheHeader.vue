@@ -1,8 +1,8 @@
 <template>
-  <div class="header container"> 
+  <div class="header container navbar"> 
     <div class="header-logo">
       <nuxt-link to="/">
-        <h1>デモの投稿サイト</h1>
+        <h1 class="display-4">デモの投稿サイト</h1>
       </nuxt-link>
     </div>
     <ul class="header-list">
