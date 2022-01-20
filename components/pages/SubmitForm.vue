@@ -13,13 +13,13 @@
     
 <script>
 export default {
- methods:{
-   insert: function(){
-     let obj =  {title: this.title, content: this.content}
-     this.$store.commit('insert',obj)
-     this.title = '';
-     this.content = '';
-   }
- } 
+  methods:{
+    insert: function(){
+      let obj =  {title: this.title, content: this.content}
+      this.$store.commit('insert',obj)
+      this.title = '';
+      this.content = '';
+    }
+  } 
 }
 </script>

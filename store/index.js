@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 const createStore = () => {
   return new Vuex.Store({
     state: () => ({
-      articles:[
+    articles: [
         {title: 'おすすめの化粧水10選',
         content: 'hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge',
       },
@@ -11,7 +11,7 @@ const createStore = () => {
         content: 'hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge',}
       ]
     }),
-    mutations:{
+    mutations: {
       insert: function(state,obj){
         console.log(state.articles);
         state.articles.unshift({
@@ -20,9 +20,10 @@ const createStore = () => {
         })
       }
     },
-     actions:{
+    actions: {
     },
-    getters:{}
+    getters: {
+    }
   })
 }
 
