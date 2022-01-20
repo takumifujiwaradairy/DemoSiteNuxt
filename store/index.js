@@ -13,9 +13,10 @@ const createStore = () => {
     }),
     mutations:{
       insert: function(state,obj){
+        console.log(state.articles);
         state.articles.unshift({
           title: obj.title,
-          // content: obj2.content
+          content: obj.content,
         })
       }
     },
