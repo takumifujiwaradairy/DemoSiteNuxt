@@ -1,8 +1,8 @@
 <template>
-<div>
-  <SubmitForm/>
-  <ArticleIndex/>
-</div>
+  <div>
+    <SubmitForm/>
+    <ArticleIndex/>
+  </div>
 </template>
 
 <script>
