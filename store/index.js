@@ -15,7 +15,7 @@ const createStore = () => {
       insert: function(state,obj){
         state.articles.unshift({
           title: obj.title,
-          content: obj.content
+          // content: obj2.content
         })
       }
     },

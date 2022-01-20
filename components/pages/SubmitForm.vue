@@ -5,7 +5,7 @@
     <label class="form-label">記事</label>
     <textarea name="content" class="form-control" rows="3"></textarea>
     <div>
-      <button>save</button> 
+      <button @click="insert">save</button> 
       <button>find</button> 
     </div>
   </div>
@@ -13,6 +13,14 @@
     
 <script>
 export default {
-  
+ methods:{
+   insert: function(){
+     console.log("AAA")
+     this.$store.commit('insert',{title: this.title});
+     this.title = '';
+    //  this.content = '';
+    console.log("BBB")
+   }
+ } 
 }
 </script>
