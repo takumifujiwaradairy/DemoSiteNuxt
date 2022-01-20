@@ -13,6 +13,12 @@
     
 <script>
 export default {
+  data() {
+    return {
+      title: '',
+      content: ''
+    } 
+  },
   methods:{
     insert: function(){
       this.$store.commit('insert',{ title: this.title, content: this.content })
