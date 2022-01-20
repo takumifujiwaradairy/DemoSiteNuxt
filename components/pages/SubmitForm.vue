@@ -6,7 +6,6 @@
     <textarea name="content" class="form-control" rows="3" v-model="content"></textarea>
     <div>
       <button @click="insert">save</button> 
-      <button>find</button> 
     </div>
   </div>
 </template>
@@ -25,6 +24,6 @@ export default {
       this.title = '';
       this.content = '';
     }
-  } 
+  }
 }
 </script>
