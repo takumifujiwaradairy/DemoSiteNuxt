@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="submitform">
     <input type="text" name="title">
     <textarea name="content"></textarea>
     <div>
