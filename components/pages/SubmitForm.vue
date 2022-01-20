@@ -6,20 +6,21 @@
     <textarea name="content" class="form-control" rows="3" v-model="content"></textarea>
     <div>
       <button @click="insert">save</button> 
-      <button>find</button> 
     </div>
   </div>
 </template>
     
 <script>
 export default {
-  methods:{
-    insert: function(){
-      let obj =  {title: this.title, content: this.content}
-      this.$store.commit('insert',obj)
-      this.title = '';
-      this.content = '';
+  return { 
+    methods:{
+      insert: function(){
+        let obj =  {title: this.title, content: this.content}
+        this.$store.commit('insert',obj)
+        this.title = '';
+        this.content = '';
+      }
     }
-  } 
+  }
 }
 </script>
