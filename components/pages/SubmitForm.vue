@@ -6,19 +6,24 @@
     <textarea name="content" class="form-control" rows="3" v-model="content"></textarea>
     <div>
       <button @click="insert">save</button> 
-      <button>find</button> 
     </div>
   </div>
 </template>
     
 <script>
 export default {
+  data() {
+    return {
+      title: '',
+      content: ''
+    } 
+  },
   methods:{
     insert: function(){
       this.$store.commit('insert',{ title: this.title, content: this.content })
       this.title = '';
       this.content = '';
     }
-  } 
+  }
 }
 </script>

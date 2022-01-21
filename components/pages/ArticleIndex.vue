@@ -1,7 +1,8 @@
 <template>
   <div class="container py-4">
+    <SerachTitle/>
     <ul>
-      <li v-for="(article,index) in articles" :key="index.id" class="container">
+      <li v-for="(article, index) in display" :key="index.id" class="container">
         <p>{{article.title}}</p>
         <p>{{article.content}}</p>
       </li>
@@ -11,16 +12,29 @@
 
 <script>
 import {mapState} from 'vuex';
+import SerachTitle from './SerachTitle.vue';
 
-export default {
-  data: function(){
-    return{
+export default { 
+  data: function() {
+    return {
       title: '',
-      content: '' 
+      content: '',
     } 
   },
-  computed:{
-    ...mapState(['articles'])
+  components: {
+    SerachTitle
+  },
+  computed: {
+    ...mapState(['articles', 'selected']),
+    display: function() {
+      if(this.selected.length === 0){
+        return this.articles;
+      } else {
+        return this.selected;
+      }
+    }
+  },
+  methods:{
   }
 }
 </script>
