@@ -10,10 +10,10 @@
         <li class="header-item">投稿</li>
       </nuxt-link>
       <nuxt-link to="/login">
-      <li class="header-item">ログイン</li>
+        <li class="header-item">ログイン</li>
       </nuxt-link>
       <nuxt-link to="/signup">
-      <li class="header-item">新規登録</li>
+        <li class="header-item">新規登録</li>
       </nuxt-link>
     </ul>
   </div>
