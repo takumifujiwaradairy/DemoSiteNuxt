@@ -1,8 +1,8 @@
 <template>
   <div>
     <label for="">検索</label>
-    <input type="text" v-model="serachTitle">
-    <button @click="find">検索</button>
+    <input type="text" v-model="searchWord" @focus="setFlag">
+    <button @click.prevent="search">検索</button>
     <p>{{ serachTitle }}</p>
   </div>
 </template>
@@ -18,13 +18,14 @@ export default {
   methods: {
     find: function() {
       this.findFlag = true;
-      console.log("AAAA");
+    },
+    search: function() {
+      this.$store.commit('search', this.searchWord)
     },
     setFlag: function() {
       if(this.findFlag){
         this.findFlag = false;
-        this.serachTitle = '';
-        console.log("BBBB")
+        this.searchTitle = '';
       }
     }
   }
